@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="motosait">
+    <title>MotoWorld</title> 
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-default">
+			<div class="container-fluid">
+				<a href="index.html"><img class="motoimg" src="Logo.jpg" alt=""></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+					aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Main</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Motorcycles.html">Motorcycles</a>
+						</li>
+						<li class="nav-item active">
+							<a href="Motorcycle parts.html" class="nav-link active">Motorcycle parts</a>
+						</li>
+						<li class="nav-item">
+							<button class="nav-button" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+		</nav>
+		</div>
+
+		<div class="modal fade"  id="signUpModal" >
+			<div class="modal-dialog  ">
+				<div class="modal-content ">	
+					<div class="signUpForm">
+						<form action="">
+							<div class="modal-head">
+								<div class="empty"></div>
+								<h1 class="SignUpTitle"> Sign Up</h1>
+								<button class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+							<div class="form-floating">
+								<input type="text" name="firstName" id="firstName" placeholder="First Name"
+									class="form-control" required>
+								<label for="firstName" class="form-label">First Name</label>
+							</div>
+							<div class="form-floating">
+								<input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-control"
+								required>
+								<label for="lastName" class="form-label">Last Name</label>
+							</div>
+							<div class="form-floating">
+								<input type="email" name="email" id="email" placeholder="Email" class="form-control"
+									required>
+								<label for="email" class="form-label">Email</label>
+							</div>
+							<div class="form-floating">
+								<input type="password" name="password" id="password"
+									placeholder="Password (Minimum 8 characters)" minlength="8" class="form-control" required>
+								<label for="password" class="form-label">Password</label>
+							</div>
+							<div class="form-floating">
+								<input type="password" name="passwordConfirmation" id="passwordConfirmation"
+									placeholder="Confirm Password" class="form-control" required>
+								<label for="passwordConfirmation" class="form-label">Confirm Password</label>
+							</div>
+							<button type="submit" class="form-button">Submit</button>
+						</form>
+					</div>
+				</div>
+		    </div>
+	    </div>
+
+	</header>
+
+	<div class="container-fluid-zap">
+		<h1 class="zap">Категорії запчатсин</h1>
+		<div class="footers">
+			<div class="cardzap" style="width: 14rem;">
+				<img src="modul.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Моторні мастила </h5>
+				  <p class="card-text">Тут ви можете підібрати масло як для двигуна так і до мартизаторів або коробки  </p>
+				  <button class="buyzap" data-bs-toggle="modal" data-bs-target="#buyModal">Перейти</button>
+				</div>
+			 </div>
+			 <div class="cardzap" style="width: 15rem;">
+				<img src="motor.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Запчастини для мотора</h5>
+				  <p class="card-text">Тут ви можете купити будь-які запчастини для мотора, або цілий мотор в зборі </p>
+				  <button class="buyzap" data-bs-toggle="modal" data-bs-target="#buyModal">Перейти</button>
+				</div>
+			 </div>
+			 <div class="cardzap" style="width: 15rem;">
+				<img src="ecip.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Мотоекіпіровка </h5>
+				  <p class="card-text">Тут ви можете підібрати екіпіровку всіх розмірів Шлеми,Черепахи,Рукавиці.</p>
+				  <button class="buyzap" data-bs-toggle="modal" data-bs-target="#buyModal">Перейти</button>
+				</div>
+			 </div>
+		</div>
+	</div>
+	<main>
+	</main>
+	<footer class="footer">
+		<div class ="footer-content">
+			<p class="logoText"><a href="index.html" class="foorer-brand navbar-brand">MotoWorld</a></p>
+		</div>
+		<div class="footer-content">
+			<P class="ptext">Instagram account:</P>
+			<a class="decornone" href="instagram volodya_004">volodya_004</a>
+		</div>
+		<div class="footer-content">
+			<P class="ptext">Mobile phone number:</P>
+			<a class="decornone" href="tel: 0968198666">0968198666</a>
+		</div>
+		<div class="footer-content">
+			<P class="ptext">E-mail address:</P>
+			<a class="decornone "href="mailto:nosa.volodymyr@student.uzhnu.edu.ua">nosa.volodymyr@student.uzhnu.edu.ua</a>
+		</div>
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"crossorigin="motosait"></script>
+</body>
+
+</html>

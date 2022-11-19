@@ -1,0 +1,575 @@
+*, *::after, *::before {
+   box-sizing: border-box;
+ }
+@import'settings';
+body{
+	background-color: $color3;
+}
+.header {
+	width: 100%;
+}
+
+.logoText {
+	color: $color5;
+	font-size: 36px;
+	align-self: center;
+	font-style: italic;
+	transition: all .3s linear;
+}
+
+.motoimg {
+	margin-left: 100px;
+	 height: 100px;
+	 object-fit: cover;
+	 border-radius: 999px;
+ }
+ .foto{
+	margin-top: 20px;
+	 width: 500px;
+	 border-radius: 20px;
+ }
+ @media screen and (max-width: 576px) {
+	.motoimg{
+	   margin-left: 0px;
+	   height: 70px;
+	}
+	.foto{
+	   width: 100%;
+	}
+  }
+.container-fluids-card{
+	display: flex;
+	text-align: center;
+	margin-left: 14%;
+	margin-top: 50px;
+}
+
+.container-fluid-card{
+	display: flex;
+	text-align: center;
+	margin-left: 14%;
+	margin-top: 20px;
+}
+.buy{
+	width: 150px;
+	height: 45px;
+	border: none;
+	border-radius: 5px;
+	background-color: $color1;
+	color: $color5;
+	transition: all .3s linear;
+	text-decoration: none;
+
+
+	&:hover {
+		color: $color1;
+		background-color: $color5;
+	}
+}
+
+.card{
+	margin-left: 50px;
+	margin-top: 50px;
+	background-color: $color2;
+	border:5px solid $color2 ;
+}
+.card-img-top{
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 576px) {
+	.container-fluids-card{
+		display: contents;
+		text-align: center;
+		margin-left: -200px;
+		min-width: 250px;
+	}
+	
+	.container-fluid-card{
+		display: contents;
+		text-align: center;
+		margin-left: -200px;
+		min-width: 250px;
+	}
+	.card{
+		max-width: 230px;
+	}
+	.cards{
+		max-width: 200px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.container-fluids-cards{
+		display: contents;
+		text-align: center;
+		margin-left: -200px;
+		margin-bottom: 5px;
+	}
+	h3{
+		margin-top: 0px;
+	}
+  }
+
+ h3{
+	margin-top: 50px;
+	text-align: center;
+ }
+ .container-fluids-cards{
+	display: flex;
+	text-align: center;
+	margin-left: 12%;
+	margin-top: 50px;
+ }
+ .cards{
+	margin-left: 60px;
+	background-color: $color2;
+	border:7px solid $color2 ;
+	border-radius: 20px;
+}
+.title {
+	margin: 20px 0;
+	font-size: 54px;
+}
+
+.text {
+	font-size: 20px;
+	&:hover {
+		color: $color1;
+	}
+}
+.navbar-toggler-icon {
+	width: 20px;
+}
+
+.navbar-toggler {
+	padding: 4px 10px;
+}
+
+.navbar.navbar-default {
+	background-color: $color2;
+	border:2px solid $color1 ;
+}
+
+.navbar.navbar-default .nav-link {
+	font-size: 24px;
+	margin-right: 150px;
+	color: $color5;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		color: $color1;
+	}
+}
+
+.navbar.navbar-default .navbar-toggler {
+	border-color: $color5;
+
+	&:hover {
+		color: #290707;
+	}
+
+	&:focus {
+		box-shadow: none;
+		outline: none
+	}
+}
+
+.nav-button {
+	width: 145px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 100px;
+	margin-right: 20px;
+	background-color: $color1;
+	color: $color5;
+	transition: all .3s linear;
+	
+
+	&:hover {
+		color: $color1;
+		background-color: $color5;
+	}
+}
+
+.modal-content {
+	height: 500px;
+	flex-direction: row;
+	box-shadow: 0px 0px 80px 40px $color1;
+}
+
+.SignUpTitle {
+	text-align: center;
+}
+
+.signUpForm {
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.form-control {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid $color5;
+	border-radius: 0;
+	height: 50px;
+
+	&::placeholder {
+		color: $color5;
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border-bottom: 2px solid $color1;
+	}
+}
+
+.SignUpTitle {
+	margin: 25px 0;
+}
+
+
+.form-button {
+	width: 140px;
+	height: 40px;
+	margin: 30px 0 10px 0;
+	border: none;
+	border-radius: 5px;
+	background-color: $color1;
+	color: $color5;
+	transition: all .3s linear;
+	letter-spacing: 0.5px;
+
+	&:hover {
+		color: $color1;
+		background-color: $color5;
+		border: 1px solid $color5;
+	}
+}
+
+form {
+	width: 90%;
+	text-align: center;
+}
+
+.modal-body {
+	width: 100%;
+	padding: 0;
+	display: flex;
+}
+
+.modal-head {
+	width: 90%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.btn-close {
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	margin-top: 10px;
+
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+.empty {
+	width: 48px;
+	height: 100%;
+}
+
+.form-floating {
+	text-align: center;
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.content {
+	text-align: center;
+	max-width: 150%;
+	height: 1100px;
+	margin: 0 auto;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	min-height: 150px;
+	flex-wrap: nowrap;
+	margin-top: 50px;
+	max-width: 100%;
+	background-color: $color2;
+	border:2px solid $color1 ;
+}
+.decornone{
+	font-size: 18px;
+	text-decoration: none;
+	color: $color5;
+	&:hover {
+		color: $color1;
+	}
+}
+.ptext{
+	color: $color5;
+	font-size: 20px;
+}
+
+.footer-content {
+	min-width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+.container-fluid-zap{
+	width: 80%;
+	height: 500px;
+	background-color: $color2;
+	margin-top: 50px;
+	margin-left: 14%;
+	border-radius: 30px;
+}
+.footers {
+	display: flex;
+	flex-direction: row;
+	min-height: 150px;
+	flex-wrap: nowrap;
+	margin-top: 25px;
+	max-width: 100%;
+	background-color: $color2;
+	
+}
+.cardzap{
+	text-align: center;
+	margin-left: 80px;
+	background-color: $color2;
+	margin-right: 110px;
+	
+
+}
+.buyzap{
+	width: 150px;
+	height: 45px;
+	border: none;
+	border-radius: 5px;
+	background-color: $color1;
+	color: $color5;
+	transition: all .3s linear;
+	text-decoration: none;
+
+
+	&:hover {
+		color: $color5;
+		background-color: $color3;
+	}
+}
+.zap{
+	text-align: center;
+}
+
+
+@media screen and (max-width: 576px) {
+	.container-fluid-zap{
+		display: contents;
+		text-align: center;
+		margin-top: 0px;
+		max-width: 250px;
+		height: 100%;
+	}
+	.footers {
+		width: 100%;
+		display: contents;
+		text-align: center;
+		flex-direction: row;
+		min-height: 150px;
+		flex-wrap: nowrap;
+		margin-top: 25px;
+		max-width: 100%;
+		height: 100%;
+	}
+	.cardzap{
+		text-align: center;
+		margin-top: 30px;
+		margin-left: 50px;
+		max-width: 220px;;
+		height: 395px;
+	}
+	h1{
+		margin-top: 20px;
+	}
+  }
+
+@media screen and (max-width: 992px) {
+	.modal-body {
+		width: 100%;
+		padding: 0;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.navbar.navbar-default .nav-item:nth-child(4) {
+		justify-content: start;
+	}
+
+	.navbar.navbar-default .nav-item {
+		margin: 10px 0;
+	}
+
+	.navbar.navbar-default .nav-link {
+		margin: 0 0 0 3px;
+		text-align: left;
+	}
+
+	.nav-button {
+		margin-right: 8px;
+		margin-left: 0;
+	}
+
+	.modal-content {
+		box-shadow: none;
+		flex-direction: column;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.modalSignUpImage {
+		width: 70%;
+		height: 50%;
+		background-position-y: 65%;
+		margin-bottom: 20px;
+	}
+
+	.signUpForm {
+		width: 100%;
+	}
+
+	.form-floating {
+		text-align: center;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.content {
+		text-align: center;
+		max-width: 100%;
+		height: 750px;
+		margin: 0 auto;
+	}
+}
+.buttons{
+	width: 200px;
+	height: 50px;
+	background-color: #290707;
+}
+.buyUpForm {
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: $color4;
+	border-radius: 30px;
+}
+.button-buy{
+	height: 400px;
+	width: 100%;
+	max-width: 330px ;
+	flex-direction: row;
+}
+.card-buy{
+	margin-left:15px;
+}
+.card-body-buy{
+	margin-top: -30px;
+}
+
+.close{
+	margin-top: -10px;
+	margin-left: 250px;
+}
+
+@media screen and (max-width: 576px) {
+	.card-buy{
+		margin-left:-7px;
+	}
+	.modal-dialog {
+		height: 400px;
+		max-width: 90%;
+		flex-direction: row;
+		margin-left: 15px;
+	}
+	.close{
+		margin-top: -10px;
+		margin-left: 230px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.modalSignUpImage {
+		margin-bottom: 20px;
+		background-position-y: 65%;
+	}
+
+	.slider-text {
+		font-size: 16px;
+	}
+
+	.content {
+		height: 950px;
+	}
+
+	.SignUpTitle {
+		font-size: 32px;
+	}
+
+	.btn-close {
+		margin-top: 8px;
+	}
+
+	.text {
+		font-size: 24px;
+	}
+
+	.title {
+		font-size: 36px;
+	}
+
+	.block-button {
+		width: 145px;
+		height: 40px;
+		font-size: 16px;
+	}
+
+	.footer {
+		flex-wrap: wrap;
+	}
+
+	.footer-content {
+		min-width: 50%;
+		margin: 20px 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footer-content {
+		min-width: 100%;
+	}
+}
